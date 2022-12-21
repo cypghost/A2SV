@@ -1,11 +1,6 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 K = int(input())
 room = input().split(" ")
-'''
-{
-    key: value
-}
-'''
 rooms = {}
 for i in range (len(room)):
     if room[i] not in rooms:
