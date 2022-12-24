@@ -1,13 +1,10 @@
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
-        letters = {}
-        lettert = {}
-        # To find the element added to t
-        for a in t:
-            letters[a] = s.count(a)
-            lettert[a] = t.count(a)
-            if letters[a] != lettert[a]:
-                return a 
+        
+        for i in t:
+            if s.count(i) != t.count(i):
+                    return i
+                
             
         
                 
