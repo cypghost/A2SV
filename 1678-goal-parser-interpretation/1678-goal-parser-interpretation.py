@@ -4,7 +4,7 @@ class Solution:
         # Space to Keep our strings
         answer = ""
         
-        # Check if empty or not and to find strings and "()" to replace with o
+        # To find strings and "()" to replace with o
         for i in range(len(command)):
             if command[i] != "(" and command[i] != ")":
                 answer += command[i]
