@@ -10,7 +10,8 @@ class Solution:
             merged += word1[pointer]
             merged += word2[pointer]
             pointer += 1
-          
+         
+        # when len(words1) != len(words2), appends rest of elements to merged
         merged += word1[pointer:]
         merged += word2[pointer:]
         return merged
