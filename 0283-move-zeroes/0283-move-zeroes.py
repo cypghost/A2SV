@@ -5,6 +5,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+         
         temp = nums.count(0)
         
         for i in range(temp):
@@ -12,21 +13,4 @@ class Solution:
             nums.append(0)
             
         return nums
-        
-    
-    
-    
-    
-    
-    
-    
-        q = deque(nums)
-        
-        for i in range(len(nums)):
-            if nums[i]== 0:
-                q.append(nums[i])
-            else:
-                q.appendleft(nums[i])
-                
-        return q
             
