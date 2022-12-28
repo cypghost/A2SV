@@ -1,21 +1,21 @@
 class Solution:
     def average(self, salary: List[int]) -> float:
+        # sort the salary
         salary.sort()
-        
-        n = len(salary)
         
         small = 0
         add = 0
         
-        if n == 3:
-            return salary[n//2]
+        if len(salary) == 3:
+            return salary[len(salary)//2]
         
-        elif n < 3:
+        elif len(salary) < 3:
             return 0
         
-        while(small < (n-2)):
+        while(small < (len(salary)-2)):
             add += salary[small + 1]
             small += 1
+            
         add = add/small
         
         return add
