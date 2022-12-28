@@ -4,4 +4,4 @@ class Solution:
         fahrenheit = celsius * 1.80 + 32.00
         
         return [kelvin, fahrenheit]
- 
+        # return[celisus + 273.15, celisus * 1.80 + 32.00]
