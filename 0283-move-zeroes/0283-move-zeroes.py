@@ -5,12 +5,13 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-         
-        temp = nums.count(0)
-        
-        for i in range(temp):
-            nums.remove(0)
+        i = 0
+        while True:
+            if 0 in nums:
+                i += 1
+                nums.remove(0)
+                continue
+            break
+        for j in range(i):
             nums.append(0)
-            
-        return nums
             
