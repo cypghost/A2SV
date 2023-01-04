@@ -12,7 +12,7 @@ class Solution(object):
         
         for index in range(len(points)):
             if points[index][0] == x or points[index][1] == y:
-                distance = abs(x - points[index][0]) + abs(y - points[index][1])
+                distance = abs(x - points[index][0]) + abs(y - points[index][1]) # one liner
                 
                 if distance < maximum:
                     answer = index
@@ -20,4 +20,4 @@ class Solution(object):
                     
         return answer
                     
-                
+                # Why blank space here?
