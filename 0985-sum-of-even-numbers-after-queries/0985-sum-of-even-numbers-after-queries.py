@@ -23,7 +23,7 @@ class Solution(object):
             if nums[index] % 2 == 0 and numsele % 2 != 0:
                 evensum += nums[index]
                 
-            if nums[index] % 2 == 0 and numsele % 2 == 0:
+            elif nums[index] % 2 == 0 and numsele % 2 == 0:
                 evensum += value
                 
             elif nums[index] % 2 != 0 and numsele % 2 == 0:
