@@ -8,13 +8,14 @@ class Solution(object):
         count = 0
         
         for food in deliciousness:
-            
             if len(Meals) == 0:
                 Meals[food]=0
                 
             for meal in range(22):
-                if (2**meal) - food in Meals:
-                    count += Meals[(2**meal) - food] 
+                index = (2**meal) - food
+                
+                if index in Meals:
+                    count += Meals[index] 
                     
             if food not in Meals:
                 Meals[food] = 1
