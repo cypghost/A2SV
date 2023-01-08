@@ -5,21 +5,8 @@ class Solution(object):
         :type spaces: List[int]
         :rtype: str
         """
-        answer = []
-        number = 0
-        
-		# stores a word to the list separately from the string
-        for index in spaces:
-            word = s[number:index]
-            answer.append(word)
-            number = index
-            
-        # left out string characters are added 
-        answer.append(s[spaces[len(spaces) - 1]:])
-        
-        return " ".join(answer)
-        
-        # TIME LIMIT EXCEEDED        
+	
+	# TIME LIMIT EXCEEDED        
 #         number = 0
 #         add = 0
         
@@ -30,4 +17,20 @@ class Solution(object):
 #             add += 1
         
 #         return s
+
+        answer = []
+        number = 0
+        
+	# stores a word to the list separately from the string
+        for index in spaces:
+            word = s[number:index]
+            answer.append(word)
+            number = index
+            
+        # left out string characters are added 
+        answer.append(s[spaces[len(spaces) - 1]:])
+        
+        return " ".join(answer)
+        
+        
 			
