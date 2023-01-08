@@ -19,14 +19,9 @@ class Solution(object):
                 else:
                     verword += " "
                     
-            answer.append(verword)
+            answer.append(''.join(verword).rstrip())
         
-        output = []
-        
-        for verword in answer:
-            output.append(''.join(verword).rstrip())
-            
-        return output
+        return answer
         
         
         
