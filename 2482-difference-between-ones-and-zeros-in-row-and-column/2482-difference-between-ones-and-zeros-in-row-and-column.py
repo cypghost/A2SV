@@ -18,6 +18,4 @@ class Solution(object):
                 cols[gridcol] += value
         
         # return the difference with in the specified row and column 
-        return [[rows[gridrow] + cols[gridcol] 
-                for gridcol in range(len(grid[0]))] 
-                for gridrow in range(len(grid))]
+        return [[rows[gridrow] + cols[gridcol] for gridcol in range(len(grid[0]))] for gridrow in range(len(grid))]
