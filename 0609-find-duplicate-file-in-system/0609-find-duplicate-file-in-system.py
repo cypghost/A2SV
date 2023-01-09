@@ -4,29 +4,18 @@ class Solution(object):
         :type paths: List[str]
         :rtype: List[List[str]]
         """
-        dic = defaultdict(lambda :[])
+        file = defaultdict(lambda :[])
         
         for index in range(len(paths)):
             string = paths[index]
             word = string.split(" ")                
             
             for char in range(1, len(word)):
-                sp = word[char].index("(")
-                dic[word[char][sp:]].append(word[0] + "/" + word[char][:sp])
+                brac = word[char].index("(")
+                file[word[char][brac:]].append(word[0] + "/" + word[char][:brac])
                     
-        return [dic[index] for index in dic if len(dic[index]) > 1]
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        return [file[index] for index in file if len(file[index]) > 1] 
+         
 #         answer = [[] for element in range(2)]
         
 #         for elements in range(len(paths)):
