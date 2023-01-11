@@ -8,11 +8,16 @@ class Solution(object):
         players = [index for index in range(1, n + 1)]
         curr = 0
         friendsleft = n
+        k -= 1
         
         for index in range(n - 1):
-            curr = (curr + k - 1) %  friendsleft
+            curr += k 
+            curr %= n
             players.remove(players[curr])
-            friendsleft -= 1 
+            n -= 1 
         
         return players[0]
         
+        # First 2 case Accepted code
+        # m = n - k
+        # return m
