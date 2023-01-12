@@ -10,9 +10,10 @@ class Solution:
                 temp = nums[index]
                 nums[index] = nums[element]
                 nums[element] = temp
+                element += 1
                 
                 # nums[index], nums[element] = nums[element], nums[index]
-                element += 1
+                
                 
         return nums
         
