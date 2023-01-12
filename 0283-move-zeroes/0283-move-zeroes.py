@@ -1,5 +1,3 @@
-from collections import deque
-
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
