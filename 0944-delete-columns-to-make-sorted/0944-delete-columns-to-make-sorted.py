@@ -5,6 +5,8 @@ class Solution(object):
         :rtype: int
         """
         count = 0
+        # Problem 1
+        
 #         pointer = 1
 #         index = 0
         
@@ -14,6 +16,16 @@ class Solution(object):
 #                     pointer += 1
 #             index += 1
         
+        # Problem 2 
+#         pointer = 0
+#         index = 0
+        
+#         while index < len(strs[0]) and pointer <= len(strs) - 1:
+#             if strs[pointer][index] > strs[pointer + 1][index]:
+#                     count += 1
+#                     pointer += 1
+#             index += 1
+
         for char in range(len(strs[0])):
             for index in range(1, len(strs)):
                 if ord(strs[index][char]) < ord(strs[index - 1][char]):
