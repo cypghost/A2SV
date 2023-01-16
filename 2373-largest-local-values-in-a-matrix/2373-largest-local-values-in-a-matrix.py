@@ -35,7 +35,8 @@ class Solution(object):
                 larger.append(maxvalue)
                     
             maxlocal.append(larger)
-                   
+        
+        del larger
         return maxlocal
                         
         
