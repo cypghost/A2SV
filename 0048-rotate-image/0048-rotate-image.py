@@ -6,24 +6,24 @@ class Solution(object):
         """
         # With in place 
         
-        # matrix.reverse()
-        # for row in range(len(matrix)):
-        #     for col in range(row):
-        #         matrix[row][col], matrix[col][row] = matrix[col][row], matrix[row][col]
+        matrix.reverse()
+        for row in range(len(matrix)):
+            for col in range(row):
+                matrix[row][col], matrix[col][row] = matrix[col][row], matrix[row][col]
         
         # Without in place
         
-        answer = []
+#         answer = []
         
-        for row in range(len(matrix)):
-            shifted = []
-            for col in range(len(matrix[0])):
-                shifted.append(matrix[col][row])
-            answer.append(shifted[::-1])
+#         for row in range(len(matrix)):
+#             shifted = []
+#             for col in range(len(matrix[0])):
+#                 shifted.append(matrix[col][row])
+#             answer.append(shifted[::-1])
             
-        for row in range(len(matrix)):
-            for col in range(len(matrix[0])):
-                matrix[row][col] = answer[row][col]
+#         for row in range(len(matrix)):
+#             for col in range(len(matrix[0])):
+#                 matrix[row][col] = answer[row][col]
 
              
             
