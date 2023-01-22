@@ -1,23 +1,12 @@
 class Solution:
     def largestNumber(self, nums: List[int]) -> str:
-        string = sorted([str(num) for num in nums])
-        curr = [string[0]]
-
-        for index in range(1, len(nums)):
-            if curr[-1] + string[index] > string[index] + curr[-1]:
-                string[index - len(curr)] = string[index]
-                string[index] = curr[-1]
+        for index in range(len(nums)):
+            value, curr = index, nums[index]
+            
+            while value > 0 and not str(nums[value - 1]) + str(curr) > str(curr) + str(nums[value - 1]):
+                nums[value] = nums[value - 1] 
+                value -= 1
                 
-            elif curr[-1] + string[index] == string[index] + curr[-1]:
-                curr.append(string[index])
-                
-            else:
-                curr = [string[index]]
-        
-        result = ''.join(reversed(string)) 
-        
-        if int(result) > 0:
-            return result
-        
-        else:
-            return '0'
+            nums[value] = curr
+            
+        return str(int("".join(map(str, nums))))
