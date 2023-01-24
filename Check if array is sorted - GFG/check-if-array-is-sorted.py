@@ -3,11 +3,22 @@
 class Solution:
     def arraySortedOrNot(self, arr, n):
         # code here
-        for index in range(n - 1):
-            if arr[index] > arr[index + 1]:
+        left = 0
+        right = 1
+        
+        while right <= n - 1:
+            if arr[left] > arr[right]:
                 return 0
-    
+            left += 1
+            right += 1
+            
         return 1
+        
+        # for index in range(n - 1):
+        #     if arr[index] > arr[index + 1]:
+        #         return 0
+    
+        # return 1
             
                 
             
