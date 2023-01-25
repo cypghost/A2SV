@@ -10,7 +10,7 @@ class Solution:
                 prod = height[left] * (right - left)
                 left += 1
                 
-            elif height[left] > height[right]:
+            else:
                 prod = height[right] * (right - left)
                 right -= 1
                 
