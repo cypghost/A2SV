@@ -21,17 +21,3 @@ class Solution:
                 left += 1
             
         return False 
-    
-        # return False
-            
-#         while num1 < c:
-#             num2 = int(c - (num1**2))
-            
-#             for index in range(c + 1):
-#                 if num2 == index**2:
-#                     return True
-            
-#             num1 += 1
-        
-        return False
-    
