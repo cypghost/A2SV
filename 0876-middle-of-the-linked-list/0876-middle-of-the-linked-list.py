@@ -13,15 +13,8 @@ class Solution:
             temp2 = temp2.next
             count += 1
             
-            
         for itr in range(count // 2):
-            if itr == count // 2 - 1:
-                head = head.next
-                break
-            
             head = head.next
-                
-            print(head)
                 
         return head
             
