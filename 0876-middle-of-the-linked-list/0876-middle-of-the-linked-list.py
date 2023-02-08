@@ -12,8 +12,10 @@ class Solution:
         while temp2:
             temp2 = temp2.next
             count += 1
-            
-        for itr in range(count // 2):
+        
+        length = count // 2
+        
+        for itr in range(length):
             head = head.next
                 
         return head
