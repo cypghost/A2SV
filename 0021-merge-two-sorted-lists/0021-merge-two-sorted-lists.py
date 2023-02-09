@@ -29,7 +29,7 @@ class Solution:
             temp = list1
             values = collections.deque(values)
 
-            while cur:
+            while temp:
                 temp.val = values.popleft()
                 temp = temp.next
 
