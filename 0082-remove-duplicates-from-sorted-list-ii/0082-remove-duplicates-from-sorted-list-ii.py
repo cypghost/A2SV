@@ -8,7 +8,9 @@ class Solution:
         node = ListNode(-1)
         node.next = head
 
-        cur, prv = head, node
+        cur = head
+        prv = node
+        
         while cur:
             
             while cur.next and cur.val == cur.next.val:
