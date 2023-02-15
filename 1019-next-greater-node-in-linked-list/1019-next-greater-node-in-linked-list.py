@@ -15,7 +15,10 @@ class Solution:
         while temp:
             
             while itr and itr[-1][0] < temp.val:
-                answer[itr[-1][1]] = temp.val
+                if itr[-1][0] < temp.val:
+                    value = itr[-1][1]
+                    answer[value] = temp.val
+                    
                 itr.pop()
             
             itr.append((temp.val, index))
