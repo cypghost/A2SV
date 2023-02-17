@@ -13,7 +13,7 @@ class Solution:
         even = head.next
         temp = head.next
         
-        while even and even.next is not None:
+        while even and even.next:
             odd.next = odd.next.next
             odd = odd.next 
             
