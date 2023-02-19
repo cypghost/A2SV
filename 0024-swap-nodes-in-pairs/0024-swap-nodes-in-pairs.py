@@ -11,7 +11,7 @@ class Solution:
             return head
         
         fast = head
-        slow = head.next
+        slow = fast.next
         
         while slow and fast:
             slow.val, fast.val = fast.val, slow.val
