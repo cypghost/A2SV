@@ -10,7 +10,7 @@ class Solution:
             return False
         
         slow = head
-        fast = head.next
+        fast = slow.next
         
         while slow != fast:
             if fast == None or fast.next == None:
@@ -21,17 +21,3 @@ class Solution:
             
         return True
     
-    
-#         while fast and fast.next:
-#             slow = slow.next
-#             fast = fast.next.next
-            
-#             if slow == fast:
-#                 break
-
-#         # phase II
-#         while head != slow:
-#             slow = slow.next
-#             head = head.next
-
-#         return head
