@@ -23,17 +23,17 @@ class Solution:
         ''' 
         res = ListNode()
         res.next = head
-        res_tail = head
+        tail = res.next
         
-        curr = head.next
+        curr = tail.next
         
         while curr:
-            if curr.val >= res_tail.val:
-                res_tail = curr
+            if curr.val >= tail.val:
+                tail = curr
                 curr = curr.next
                 
             else:
-                res_tail.next = curr.next
+                tail.next = curr.next
                 
                 pos = res
                 
@@ -43,6 +43,6 @@ class Solution:
                 curr.next = pos.next
                 pos.next = curr
                 
-                curr = res_tail.next
+                curr = tail.next
         
         return res.next
