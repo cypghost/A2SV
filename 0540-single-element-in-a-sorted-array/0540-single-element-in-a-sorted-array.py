@@ -6,8 +6,8 @@ class Solution:
         left = 0
         right = len(nums) - 1
         
-        if nums[0] != nums[1]:
-            return nums[0]
+#         if nums[0] != nums[1]:
+#             return nums[0]
  
         if nums[right] != nums[right - 1]:
             return nums[right]
