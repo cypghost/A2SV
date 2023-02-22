@@ -8,9 +8,8 @@ class Solution:
             if len(set(s[left : right])) != len(s[left : right]):
                 left += 1
                 
-            else:
-                length = max(length, right - left)
-                right += 1
+            length = max(length, right - left)
+            right += 1
             
         return length
         
