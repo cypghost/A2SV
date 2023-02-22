@@ -10,7 +10,6 @@ class Solution:
                 return left
             
             leftsum += nums[left]
-            left += 1
        
         return -1
         
