@@ -5,7 +5,7 @@ class Solution:
         minimum = float("inf")
         add = nums[0]
         
-        while right < len(nums) and left <= right:
+        while right < len(nums):
             
             if add >= target:
                 minimum = min(minimum, right - left + 1)
@@ -14,6 +14,7 @@ class Solution:
                 
             elif add < target:
                 right += 1
+                
                 if right < len(nums):
                     add += nums[right]
                     
