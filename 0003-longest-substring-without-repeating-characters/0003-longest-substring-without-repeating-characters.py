@@ -1,5 +1,7 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        # APPROACH 1 : Set
+        
         str_set = set()
         length = start = 0
         
@@ -13,7 +15,7 @@ class Solution:
         
         return length
     
-        # APPROACH 1
+        # APPROACH 2 : Two Pointers
         
 #         left = 0
 #         right = 1
@@ -28,7 +30,7 @@ class Solution:
             
 #         return length
 
-        # APPROACH 2 
+        # APPROACH 3 : Dictionary 
     
 #         start = maxLength = 0
 #         usedChar = {}
