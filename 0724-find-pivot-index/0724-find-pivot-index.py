@@ -2,9 +2,8 @@ class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         add = sum(nums)
         leftsum = 0
-        left = 0
-        
-        while left < len(nums):
+
+        for left in range(len(nums)):
             diff = add - nums[left]
             
             if diff == leftsum * 2:
@@ -12,8 +11,6 @@ class Solution:
             
             leftsum += nums[left]
             left += 1
-            
-            print(add, diff, leftsum)
        
         return -1
         
