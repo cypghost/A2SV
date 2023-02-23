@@ -9,12 +9,15 @@ class Solution:
             return nums[0]
         
         while right < k - 1:
+            add += nums[right]
             right += 1
             
-        add = sum(nums[left : right + 1])   
+            
+        # add = sum(nums[left : right + 1])   
         
         while right < len(nums):
-
+            add += nums[right]
+            
             res = max(res, add / k)
             
             add -= nums[left] 
@@ -22,7 +25,7 @@ class Solution:
             
             right += 1
             
-            if right < len(nums):
-                add += nums[right]
+            # if right < len(nums):
+            #     add += nums[right]
         
         return res
