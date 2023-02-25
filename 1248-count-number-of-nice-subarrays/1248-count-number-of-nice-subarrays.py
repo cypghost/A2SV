@@ -6,8 +6,8 @@ class Solution:
         
         nums_dict[0] = 1
         
-        for index in range(len(nums)):
-            if nums[index] % 2 != 0:
+        for num in nums:
+            if num % 2 != 0:
                 count += 1
                 
             ans += nums_dict[count - k]
