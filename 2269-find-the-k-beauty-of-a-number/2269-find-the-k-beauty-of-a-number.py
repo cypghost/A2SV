@@ -1,7 +1,6 @@
 class Solution:
     def divisorSubstrings(self, num: int, k: int) -> int:
-        left = 0 
-        ans = -float("inf")
+        left = 0
         number = str(num)
         count = 0
         
