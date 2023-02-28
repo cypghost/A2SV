@@ -7,7 +7,7 @@ class Solution:
         elif n < 1:
              return False
         
-        n = n / 4
+        # n = n / 4
         
-        return self.isPowerOfFour(n)
+        return self.isPowerOfFour(n / 4)
         
