@@ -7,7 +7,7 @@ class Solution:
                 num /= 2
             
             
-            elif num % 2 == 1:
+            else:
                 num -= 1
             
             count += 1
