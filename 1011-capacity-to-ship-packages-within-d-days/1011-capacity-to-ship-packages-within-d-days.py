@@ -18,12 +18,12 @@ class Solution:
         left = max(weights)
         right = sum(weights)
         
-        while left <= right:
+        while left < right:
             
             mid = (left + right) // 2
             
             if check(weights, mid) <= days:
-                right = mid - 1
+                right = mid
             
             else:
                 left = mid + 1
