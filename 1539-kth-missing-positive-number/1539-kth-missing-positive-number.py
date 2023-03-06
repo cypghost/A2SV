@@ -1,6 +1,6 @@
 class Solution:
     def findKthPositive(self, arr: List[int], k: int) -> int:
-        for index in range(1, 10001):
+        for index in range(1, 2001):
             if index not in arr:
                  k -= 1
             
