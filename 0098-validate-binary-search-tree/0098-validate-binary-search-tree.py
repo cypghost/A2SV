@@ -9,8 +9,6 @@
     
 # class Solution:
 #     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-#         
-        
 #         ans = []
 
 #         def inorderTraversal(root):
