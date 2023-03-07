@@ -18,4 +18,4 @@ class Solution:
         
 #         return find_max(root)
 
-        return 0 if not root else max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
+        return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1 if root else 0
