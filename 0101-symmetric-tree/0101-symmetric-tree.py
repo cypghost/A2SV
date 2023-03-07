@@ -17,8 +17,10 @@ class Solution:
                 return False
             
             return orderTraversing(root1.left, root2.right) and orderTraversing(root1.right, root2.left)
-                
+        
         return orderTraversing(root.left, root.right)
+                
+        
                 
 
 
