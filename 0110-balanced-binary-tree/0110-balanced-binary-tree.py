@@ -11,7 +11,14 @@ class Solution:
 
         def heights(root):
             return 0 if not root else max(heights(root.left), heights(root.right)) + 1
+        
+        leftlen = heights(root.left)
+        rightlen = heights(root.right)
 
-        return True if abs(heights(root.left) - heights(root.right)) <= 1 and self.isBalanced(root.left) and self.isBalanced(root.right) else False
+        if abs(leftlen - rightlen) <= 1 and self.isBalanced(root.left) and self.isBalanced(root.right):
+            return True  
+        
+        else:
+            return False
         
         
