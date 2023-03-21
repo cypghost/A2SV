@@ -5,10 +5,9 @@ class Solution:
         for num in nums:
             if num == 0:
                 subarray += 1
+                ans += subarray
             
             else:
                 subarray = 0
             
-            ans += subarray
-        
         return ans
