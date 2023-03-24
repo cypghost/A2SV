@@ -4,6 +4,27 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        # Cyclic Sorting
+        
+        left = 0
+        
+        while left < len(nums):
+            cur = nums[left] - 1
+            
+            if cur != left and nums[left] != 0:
+                nums[left], nums[cur] = nums[cur], nums[left]
+            
+            else:
+                left += 1
+            
+        for index in range(len(nums)):
+            if index + 1 != nums[index]:
+                return index + 1
+        
+        return 0
+        
+        # Normal Sorting
+        
         nums.sort()
         list = []
         index = 0
