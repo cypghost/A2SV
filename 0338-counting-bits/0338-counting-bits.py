@@ -1,20 +1,29 @@
 class Solution:
     def countBits(self, n: int) -> List[int]:
         ans = [0] * (n + 1)
-        
-        if n > 0:
-            ans[1] = 1
             
         for index in range(n + 1):
-            if index % 2 == 0:
-                ans[index] = ans[index // 2]
-            
-            else:
-                ans[index] = ans[index // 2] + 1
-            
+            ans[index] = ans[index >> 1] + (index & 1)
+                
         return ans
-    
+        
         # Solution 1
+        
+#         ans = [0] * (n + 1)
+        
+#         if n > 0:
+#             ans[1] = 1
+            
+#         for index in range(n + 1):
+#             if index % 2 == 0:
+#                 ans[index] = ans[index // 2]
+            
+#             else:
+#                 ans[index] = ans[index // 2] + 1
+            
+#         return ans
+    
+        # Solution 2
         
 #         ans = []
         
@@ -23,7 +32,7 @@ class Solution:
         
 #         return ans
     
-        # Solution 2
+        # Solution 3
         
 #         ans = [0] * (n + 1)
         
