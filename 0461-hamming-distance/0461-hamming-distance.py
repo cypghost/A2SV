@@ -1,10 +1,14 @@
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
-        ans = 0
+        # Bitwise Manipulation
         
-        for index in range(max(x, y).bit_length()):
-            ans += (x & 1 << index) != (y & 1 << index)
+#         ans = 0
         
-        return ans
-    
-        # return (x ^ y).bit_count()
+#         for index in range(max(x, y).bit_length()):
+#             ans += (x & 1 << index) != (y & 1 << index)
+        
+#         return ans
+        
+        # Bit Count
+        
+        return (x ^ y).bit_count()
