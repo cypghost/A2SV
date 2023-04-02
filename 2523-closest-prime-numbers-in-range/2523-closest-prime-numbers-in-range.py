@@ -8,7 +8,6 @@ class Solution:
             
             return True
         
-        
         prime = []
         
         if left % 2 == 0 or left == 1:
