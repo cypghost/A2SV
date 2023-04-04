@@ -1,10 +1,16 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        nums_dict = defaultdict(int)
+        # Dictionary
         
-        for num in nums:
-            nums_dict[num] += 1
+#         nums_dict = defaultdict(int)
         
-        for key in nums_dict:
-            if nums_dict[key] == 1:
-                return key
+#         for num in nums:
+#             nums_dict[num] += 1
+        
+#         for key in nums_dict:
+#             if nums_dict[key] == 1:
+#                 return key
+        
+        # Set
+        
+        return (3 * sum(set(nums)) - sum(nums)) // 2
