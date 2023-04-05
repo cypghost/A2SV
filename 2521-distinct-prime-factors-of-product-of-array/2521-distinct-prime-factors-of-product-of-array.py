@@ -1,28 +1,5 @@
 class Solution:
     def distinctPrimeFactors(self, nums: List[int]) -> int:
-#         def primefactorization(prod):    
-#             prime = 2
-#             ans = set()
-            
-#             while prime * prime <= prod:
-#                 while prod % prime ==  0:
-#                     ans.add(prime)
-#                     prod //= prime
-                    
-#                 prime += 1        
-  	  
-#             if prod > 1:
-#                 ans.add(prod)
-                
-#             return len(ans)
-        
-#         prod = 1
-        
-#         for num in nums:
-#             prod *= num
-        
-#         return primefactorization(prod)
-
         ans = set()
     
         def primefactorization(num, ans):
