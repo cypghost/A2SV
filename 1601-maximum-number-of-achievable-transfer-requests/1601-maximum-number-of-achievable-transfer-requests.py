@@ -10,7 +10,6 @@ class Solution:
                 return
             
             for idx in range(start, len(requests)):
-                
                 curr.append(requests[idx])
                 beg, to = requests[idx]
                 buildings[beg] -= 1
