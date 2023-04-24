@@ -11,6 +11,6 @@ class Solution:
             s2 = stones.pop()
 
             if s1 > s2:
-                insort_left(stones, s1-s2)
+                insort_left(stones, s1 - s2)
  
         return 0 
