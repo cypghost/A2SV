@@ -9,7 +9,5 @@ class Solution:
             multiply *= 10
         
         count += 1
-        
-        digits = [int(index) for index in str(count)]
 
-        return digits
+        return [int(index) for index in str(count)]
