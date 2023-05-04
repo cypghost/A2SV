@@ -1,12 +1,14 @@
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
+        n = len(digits)
         count = 0
-        s = 1
-        for index in range(1, len(digits) + 1):        
-            count = count + digits[len(digits) - index] * s
-            s *= 10
+        multiply = 1
         
-        count = count + 1 
+        for index in range(1, n + 1):        
+            count += digits[n - index] * multiply
+            multiply *= 10
+        
+        count += 1
         
         digits = [int(index) for index in str(count)]
 
