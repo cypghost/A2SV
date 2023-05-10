@@ -25,8 +25,7 @@ class Solution:
         for index in range(len(graph)):
             dfs(index)
                 
-        order.sort()
-        return order
+        return sorted(order)
         
         
                 
