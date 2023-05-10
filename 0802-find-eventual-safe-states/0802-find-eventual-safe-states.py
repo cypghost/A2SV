@@ -23,7 +23,7 @@ class Solution:
             return False
         
         for index in range(len(graph)):
-            cycle_found = dfs(index)
+            dfs(index)
                 
         order.sort()
         return order
