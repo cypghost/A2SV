@@ -24,12 +24,7 @@ class Solution:
         
         for index in range(len(graph)):
             cycle_found = dfs(index)
-            
-            if cycle_found:
-                continue
-        
-        # print(color)
-        # print(order)
+                
         order.sort()
         return order
         
