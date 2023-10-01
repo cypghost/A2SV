@@ -14,7 +14,7 @@ class Solution:
         ans = 0
 
         for word in words:
-           if sub(word):
-               ans += 1
+            if sub(word):
+                ans += 1
         
         return ans
