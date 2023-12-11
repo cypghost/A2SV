@@ -1,12 +1,13 @@
 class Solution:
     def findSpecialInteger(self, arr: List[int]) -> int:
-        n = len(arr)
-        apperance = ceil(n * 0.25)
+        counts = defaultdict(int)
+        target = len(arr) / 4
         
-        elements = Counter(arr)
-        a = sorted(elements, reverse=True)
-        
-        for i in a:
-            if elements[i] >= apperance:
-                return i
+        for num in arr:
+            counts[num] += 1
+            
+            if counts[num] > target:
+                return num
+
+        return -1
             
