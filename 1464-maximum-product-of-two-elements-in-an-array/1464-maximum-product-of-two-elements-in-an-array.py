@@ -1,6 +1,19 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
-        nums.sort()
-        a, b = nums[-1] - 1, nums[-2] - 1
+        biggest = 0
+        second_biggest = 0
         
-        return a * b
+        for num in nums:
+            if num > biggest:
+                second_biggest = biggest
+                biggest = num
+            
+            else:
+                second_biggest = max(second_biggest, num)
+        
+        second_biggest -= 1
+        biggest -= 1
+    
+        return biggest * second_biggest
+        
+        
