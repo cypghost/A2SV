@@ -1,7 +1,7 @@
 class Solution:
     def halvesAreAlike(self, s: str) -> bool:
         n = len(s)
-        a, b = 0, 0
+        a = 0
         
         for i in range(n):
             if s[i] in  {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}:
@@ -9,9 +9,9 @@ class Solution:
                     a += 1
 
                 else:
-                    b += 1
+                    a -= 1
             
-        if a == b:
+        if a == 0:
             return True
         
         return False
